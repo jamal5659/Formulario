@@ -1,30 +1,53 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-    <title>Formulario de ejemplo</title>
+  <head>
+    <title>Formulario de entrevista de trabajo</title>
     <link rel="stylesheet" type="text/css" href="estilo.css">
-</head>
-
-<body>
+  </head>
+  <body>
     <form>
-        <p>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre">
-        </p>
-        <p>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-        </p>
-        <p>
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña">
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-        </p>
+      <h2>Información Personal</h2>
+      <p>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre">
+      </p>
+      <p>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion">
+      </p>
+      <p>
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono">
+      </p>
+      <p>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email">
+      </p>
+      <h2>Información Profesional</h2>
+      <p>
+        <label for="puesto">Puesto al que aplica:</label>
+        <input type="text" id="puesto" name="puesto">
+      </p>
+      <p>
+        <label for="empresa">Última empresa en la que trabajó:</label>
+        <input type="text" id="empresa" name="empresa">
+      </p>
+      <p>
+        <label for="experiencia">Años de experiencia:</label>
+        <input type="text" id="experiencia" name="experiencia">
+      </p>
+      <p>
+        <label for="educacion">Educación:</label>
+        <input type="text" id="educacion" name="educacion">
+      </p>
+      <h2>Información Adicional</h2>
+      <p>
+        <label for="referencias">Referencias:</label>
+        <textarea id="referencias" name="referencias" rows="5"></textarea>
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+      </p>
     </form>
-</body>
-
+  </body>
 </html>

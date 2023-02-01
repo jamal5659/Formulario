@@ -1,53 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Formulario de entrevista de trabajo</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
-  </head>
-  <body>
-    <form>
-      <h2>Información Personal</h2>
-      <p>
-        <label for="nombre">Nombre completo:</label>
-        <input type="text" id="nombre" name="nombre">
-      </p>
-      <p>
-        <label for="direccion">Dirección:</label>
-        <input type="text" id="direccion" name="direccion">
-      </p>
-      <p>
-        <label for="telefono">Teléfono:</label>
-        <input type="text" id="telefono" name="telefono">
-      </p>
-      <p>
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email">
-      </p>
-      <h2>Información Profesional</h2>
-      <p>
-        <label for="puesto">Puesto al que aplica:</label>
-        <input type="text" id="puesto" name="puesto">
-      </p>
-      <p>
-        <label for="empresa">Última empresa en la que trabajó:</label>
-        <input type="text" id="empresa" name="empresa">
-      </p>
-      <p>
-        <label for="experiencia">Años de experiencia:</label>
-        <input type="text" id="experiencia" name="experiencia">
-      </p>
-      <p>
-        <label for="educacion">Educación:</label>
-        <input type="text" id="educacion" name="educacion">
-      </p>
-      <h2>Información Adicional</h2>
-      <p>
-        <label for="referencias">Referencias:</label>
-        <textarea id="referencias" name="referencias" rows="5"></textarea>
-      </p>
-      <p>
-        <input type="submit" value="Enviar">
-      </p>
+
+<head>
+  <title>Formulario de entrevista de trabajo</title>
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body>
+  <form>
+    <h2>Información Personal</h2>
+    <form action="registrardatos.php" method="post">
+      Ingresar nombre:
+      <input type="text" name="nombre" size="20">
+      <br>
+      <input type="submit" value="enviar">
     </form>
-  </body>
+    <p>
+      <label for="direccion">Dirección:</label>
+      <input type="text" id="direccion" name="direccion">
+    </p>
+    Seleccione su pais:
+    <select name="pais">
+      <option value="1">Argentina</option>
+      <option value="2">España</option>
+      <option value="3">México</option>
+      <option value="4">Guatemala</option>
+      <option value="5">Honduras</option>
+      <option value="7">El Salvador</option>
+      <option value="8">Venezuela</option>
+      <option value="9">Colombia</option>
+      <option value="10">Cuba</option>
+      <option value="11">Bolivia</option>
+      <option value="13">Perú</option>
+      <option value="14">Ecuador</option>
+      <option value="15">Paraguay</option>
+      <option value="16">Uruguay</option>
+      <option value="17">Chile</option>
+    </select>
+    Seleccione su CCAA(en caso de ser españa):
+    <select name="pais">
+      <option value="1">Andalucia</option>
+      <option value="2">Aragon</option>
+      <option value="3">La rioja</option>
+      <option value="4">Navarra</option>
+      <option value="5">Pais Vasco</option>
+      <option value="7">Cataluña</option>
+      <option value="8">Comunidad Valenciana</option>
+      <option value="9">Comunidad de Madrid</option>
+      <option value="10">Castilla y Leon</option>
+      <option value="11">Castilla y la mancha</option>
+      <option value="13"></option>
+      <option value="14"></option>
+      <option value="15"></option>
+      <option value="16"></option>
+      <option value="17"></option>
+    </select>
+    <p>
+      <label for="telefono">Teléfono:</label>
+      <input type="text" id="telefono" name="telefono">
+    </p>
+    <p>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email">
+    </p>
+    <h2>Información Profesional</h2>
+    <p>
+      <label for="puesto">Puesto al que aplica:</label>
+      <input type="text" id="puesto" name="puesto">
+    </p>
+    <p>
+      <label for="empresa">Última empresa en la que trabajó:</label>
+      <input type="text" id="empresa" name="empresa">
+    </p>
+    <p>
+      <label for="experiencia">Años de experiencia:</label>
+      <input type="text" id="experiencia" name="experiencia">
+    </p>
+    <p>
+      <label for="educacion">Educación:</label>
+      <input type="text" id="educacion" name="educacion">
+    </p>
+    <h2>Información Adicional</h2>
+    Comentarios:<br>
+    <textarea name="Informacion"rows="5" cols="60"></textarea>
+    <br>
+    <p>
+      <input type="submit" value="enviar">
+      <input type="reset" value="borrar">
+    </p>
+  </form>
+</body>
+
 </html>
